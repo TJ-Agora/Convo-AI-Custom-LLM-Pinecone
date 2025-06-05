@@ -22,8 +22,8 @@ This repository demonstrates how to integrate Retrieval-Augmented Generation (RA
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/agora-rag-pinecone.git
-cd agora-rag-pinecone
+git clone https://github.com/TJ-Agora/Convo-AI-Custom-LLM-Pinecone.git
+cd Convo-AI-Custom-LLM-Pinecone
 ```
 
 ### 2. Install Dependencies
