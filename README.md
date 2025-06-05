@@ -2,7 +2,7 @@
 
 This repository demonstrates how to integrate Retrieval-Augmented Generation (RAG) using Pinecone into a custom LLM for Agora's Conversational AI. The project provides a foundation for creating more contextually aware and knowledge-enhanced AI conversations by leveraging vector embeddings and semantic similarity search.
 
-## 🌟 Features
+## Features
 
 - **Vector Database Integration**: Store and retrieve vector embeddings with Pinecone
 - **RAG Implementation**: Enhance LLM responses with relevant context from your knowledge base
@@ -10,14 +10,14 @@ This repository demonstrates how to integrate Retrieval-Augmented Generation (RA
 - **Streaming Support**: Real-time streaming responses from LLM APIs
 - **Easy Setup**: Simple configuration with environment variables
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js (v18+)
 - Pinecone account and API key
 - OpenAI API key (or other LLM provider)
 - Agora account (for Conversational AI integration)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
@@ -57,7 +57,7 @@ npm run dev
 
 The server will be available at `http://localhost:3000` (or the port you specified).
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 .
@@ -74,7 +74,7 @@ The server will be available at `http://localhost:3000` (or the port you specifi
 └── README.md                 # Project documentation
 ```
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Pinecone Operations
 
@@ -122,7 +122,7 @@ The server will be available at `http://localhost:3000` (or the port you specifi
   }
   ```
 
-## 💡 How RAG Works in This Project
+## How RAG Works in This Project
 
 1. User query is received by the chat completion endpoint
 2. If `queryRag` is enabled, the system:
@@ -132,7 +132,7 @@ The server will be available at `http://localhost:3000` (or the port you specifi
 3. The enhanced prompt is sent to the LLM (e.g., OpenAI)
 4. The LLM response, now informed by your knowledge base, is returned
 
-## 🔄 Integration with Agora Conversational AI
+## Integration with Agora Conversational AI
 
 This project is designed to work with Agora's Conversational AI by:
 
