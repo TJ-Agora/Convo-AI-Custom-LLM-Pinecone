@@ -31,10 +31,7 @@ router.post('/', async (req, res) => {
     const payload = {
       messages,
       model,
-      stream,
-      channel,
-      userId,
-      appId,
+      stream
     }
 
     const checks = [
