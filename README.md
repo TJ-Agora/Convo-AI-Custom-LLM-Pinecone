@@ -142,6 +142,62 @@ This project is designed to work with Agora's Conversational AI by:
 
 For full integration with Agora's Convo AI Engine, refer to the [official Agora documentation](https://docs.agora.io/en/conversational-ai/overview/product-overview).
 
+## Deploying to Heroku
+
+Follow these steps to deploy your application to Heroku:
+
+### 1. Login to Heroku
+
+```bash
+heroku login
+```
+
+### 2. Create a new Heroku app
+
+```bash
+heroku create your-app-name-here
+```
+Replace `your-app-name-here` with your desired app name.
+
+### 3. Set environment variables on Heroku
+
+```bash
+heroku config:set PINECONE_API_KEY=your_pinecone_api_key
+heroku config:set PINECONE_ENVIRONMENT=your_pinecone_environment
+heroku config:set PINECONE_INDEX_NAME=your_pinecone_index_name
+heroku config:set LLM_API_KEY=your_llm_api_key
+```
+
+### 4. Add Heroku remote (if not automatically added)
+
+```bash
+heroku git:remote -a your-app-name-here
+```
+
+### 5. Commit and deploy
+
+```bash
+git push heroku main
+```
+Or use `git push heroku master` if your default branch is master.
+
+### 6. Open your deployed app
+
+```bash
+heroku open
+```
+
+### 7. Check logs if needed
+
+```bash
+heroku logs --tail
+```
+
+### Important Notes:
+- Make sure your `package.json` has the correct Node.js version in the engines section
+- Ensure you have a `Procfile` in your root directory (should contain: `web: node server.js`)
+- Remember that Heroku's filesystem is ephemeral - any file changes will be lost on dyno restart
+
 ---
 
 Built for demonstration purposes - customize for your specific needs.
